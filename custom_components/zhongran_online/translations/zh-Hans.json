@@ -1,0 +1,67 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "\u6dfb\u52a0\u4e2d\u71c3\u71c3\u6c14",
+        "description": "\u4f7f\u7528\u77ed\u4fe1\u9a8c\u8bc1\u7801\u767b\u5f55\u3002\u9664\u975e\u4e2d\u71c3\u540e\u7aef\u62d2\u7edd\u7eaf\u77ed\u4fe1\u767b\u5f55\uff0c\u5426\u5219 Union ID \u548c Mini Open ID \u90fd\u53ef\u4ee5\u7559\u7a7a\u3002\n{error_detail}",
+        "data": {
+          "mobile": "\u624b\u673a\u53f7",
+          "union_id": "Union ID\uff08\u53ef\u9009\uff09",
+          "mini_open_id": "Mini Open ID\uff08\u53ef\u9009\uff09"
+        }
+      },
+      "captcha": {
+        "title": "\u8bf7\u6c42\u77ed\u4fe1\u9a8c\u8bc1\u7801",
+        "description": "\u8bf7\u5728\u6d4f\u89c8\u5668\u6253\u5f00\u56fe\u5f62\u9a8c\u8bc1\u7801\u94fe\u63a5\uff0c\u7136\u540e\u586b\u5199\u56fe\u5f62\u9a8c\u8bc1\u7801\u3002\n\u624b\u673a\u53f7\uff1a{mobile}\n\u56fe\u5f62\u9a8c\u8bc1\u7801 URL\uff1a{captcha_url}\n{error_detail}",
+        "data": {
+          "image_code": "\u56fe\u5f62\u9a8c\u8bc1\u7801"
+        }
+      },
+      "sms": {
+        "title": "\u5b8c\u6210\u77ed\u4fe1\u767b\u5f55",
+        "description": "\u8bf7\u8f93\u5165\u53d1\u9001\u5230 {mobile} \u7684\u77ed\u4fe1\u9a8c\u8bc1\u7801\u3002\n{error_detail}",
+        "data": {
+          "sms_code": "\u77ed\u4fe1\u9a8c\u8bc1\u7801"
+        }
+      },
+      "account": {
+        "title": "\u9009\u62e9\u71c3\u6c14\u6237\u53f7",
+        "description": "\u9009\u62e9 {mobile} \u7ed1\u5b9a\u7684\u71c3\u6c14\u6237\u53f7\u3002\n{error_detail}",
+        "data": {
+          "cust_code": "\u71c3\u6c14\u6237\u53f7"
+        }
+      },
+      "reauth_user": {
+        "title": "\u5237\u65b0\u4e2d\u71c3\u71c3\u6c14\u4f1a\u8bdd",
+        "description": "\u8bf7\u8f93\u5165\u8fd9\u4e2a\u914d\u7f6e\u9879\u5bf9\u5e94\u7684\u624b\u673a\u53f7\uff0c\u7136\u540e\u91cd\u65b0\u83b7\u53d6\u77ed\u4fe1\u767b\u5f55\u9a8c\u8bc1\u7801\u3002\n{error_detail}",
+        "data": {
+          "mobile": "\u624b\u673a\u53f7",
+          "union_id": "Union ID\uff08\u53ef\u9009\uff09",
+          "mini_open_id": "Mini Open ID\uff08\u53ef\u9009\uff09"
+        }
+      }
+    },
+    "abort": {
+      "already_configured": "\u8fd9\u4e2a\u71c3\u6c14\u6237\u53f7\u5df2\u7ecf\u914d\u7f6e\u8fc7\u4e86\u3002",
+      "reauth_failed": "\u4e2d\u71c3\u71c3\u6c14\u4f1a\u8bdd\u5237\u65b0\u5931\u8d25\u3002",
+      "reauth_successful": "\u4e2d\u71c3\u71c3\u6c14\u4f1a\u8bdd\u5df2\u5237\u65b0\u3002"
+    },
+    "error": {
+      "account_not_found": "\u6ca1\u6709\u627e\u5230\u9884\u671f\u7684\u71c3\u6c14\u6237\u53f7\u3002",
+      "cannot_login": "\u65e0\u6cd5\u4f7f\u7528\u77ed\u4fe1\u9a8c\u8bc1\u7801\u767b\u5f55\u3002",
+      "cannot_send_sms": "\u65e0\u6cd5\u8bf7\u6c42\u77ed\u4fe1\u9a8c\u8bc1\u7801\u3002",
+      "no_accounts": "\u8fd9\u4e2a\u624b\u673a\u53f7\u6ca1\u6709\u8fd4\u56de\u4efb\u4f55\u5df2\u7ed1\u5b9a\u7684\u71c3\u6c14\u6237\u53f7\u3002"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "\u8c03\u6574\u4e2d\u71c3\u71c3\u6c14\u9009\u9879",
+        "description": "\u65e0\u9700\u5220\u6389\u914d\u7f6e\uff0c\u53ef\u4ee5\u5728\u8fd9\u91cc\u8c03\u6574\u8f6e\u8be2\u95f4\u9694\u3002",
+        "data": {
+          "scan_interval_hours": "\u8f6e\u8be2\u95f4\u9694\uff08\u5c0f\u65f6\uff09"
+        }
+      }
+    }
+  }
+}

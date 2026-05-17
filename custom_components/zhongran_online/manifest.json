@@ -1,0 +1,10 @@
+{
+  "domain": "zhongran_online",
+  "name": "Zhongran Gas",
+  "config_flow": true,
+  "documentation": "https://zrds.95007.com/",
+  "issue_tracker": "https://zrds.95007.com/",
+  "version": "0.3.0",
+  "requirements": [],
+  "codeowners": []
+}

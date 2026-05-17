@@ -1,0 +1,67 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Add Zhongran Gas",
+        "description": "Sign in with SMS verification. Leave Union ID and Mini Open ID blank unless Zhongran rejects pure SMS login.\n{error_detail}",
+        "data": {
+          "mobile": "Mobile number",
+          "union_id": "Union ID (optional)",
+          "mini_open_id": "Mini Open ID (optional)"
+        }
+      },
+      "captcha": {
+        "title": "Request SMS Code",
+        "description": "Open the captcha image in your browser, then enter the image code.\nMobile: {mobile}\nCaptcha URL: {captcha_url}\n{error_detail}",
+        "data": {
+          "image_code": "Image captcha code"
+        }
+      },
+      "sms": {
+        "title": "Complete SMS Login",
+        "description": "Enter the SMS verification code sent to {mobile}.\n{error_detail}",
+        "data": {
+          "sms_code": "SMS verification code"
+        }
+      },
+      "account": {
+        "title": "Select Gas Account",
+        "description": "Select the gas account bound to {mobile}.\n{error_detail}",
+        "data": {
+          "cust_code": "Gas customer"
+        }
+      },
+      "reauth_user": {
+        "title": "Refresh Zhongran Gas Session",
+        "description": "Enter the mobile number for this entry, then request a new SMS login code.\n{error_detail}",
+        "data": {
+          "mobile": "Mobile number",
+          "union_id": "Union ID (optional)",
+          "mini_open_id": "Mini Open ID (optional)"
+        }
+      }
+    },
+    "abort": {
+      "already_configured": "This gas customer is already configured.",
+      "reauth_failed": "The Zhongran Gas session could not be refreshed.",
+      "reauth_successful": "The Zhongran Gas session was refreshed successfully."
+    },
+    "error": {
+      "account_not_found": "The expected gas account was not found.",
+      "cannot_login": "Could not log in with the SMS verification code.",
+      "cannot_send_sms": "Could not request the SMS verification code.",
+      "no_accounts": "No bound gas accounts were returned for this mobile number."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Adjust Zhongran Gas options",
+        "description": "Change the polling interval without recreating the entry.",
+        "data": {
+          "scan_interval_hours": "Polling interval (hours)"
+        }
+      }
+    }
+  }
+}
